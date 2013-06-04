@@ -8,6 +8,10 @@ As described in my [blog post][bolg], I have my phone set to silence _everything
 
 For this reason, SMS alerts won't work for a situation in which I _really_ need to get out of bed and fix something. Enter **Light Switch Rave Party** ("LSRP"). It will check a URL via HTTP GET, and if the timeout is exceeded, or if a non-200-range response status is returned (400, 500, etc) then it calls you using Twilio to alert you to the problem.
 
+> **Note:** _The script intentionally kills itself_ if it has to notify you. Twilio costs cash-money, so we don't want to go wasting that, do we?! Also, not getting called every minute while you're trying to fix your app is probably going to make it easier to fix. Just manually restart the monitoring job once you've fixed your app.
+
+## Install / Setup
+
 You'll **create an auth.json file** (copy auth-example.json and modify it), with your Twilio credentials and the phone number you want to use as the caller.
 
 Then update config.json:
@@ -17,8 +21,6 @@ Then update config.json:
 * **getTimeout:** Number of seconds to wait before considering the request to be "timed out" and notifying you of degredation
 * **notifyAction:** URL that returns the [TwiML][twiml] for the call
 * **notify:** Array of numbers to call and notify (currently only supports exactly 1 number)
-
-> **Note:** _The script intentionally kills itself_ if it has to notify you. Twilio costs cash-money, so we don't want to go wasting that, do we?! Also, not getting called every minute while you're trying to fix your app is probably going to make it easier to fix. Just manually restart the monitoring job once you've fixed your app.
 
 Once that's all good to go, start it up:
 
