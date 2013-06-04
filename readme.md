@@ -18,6 +18,8 @@ Then update config.json:
 * **notifyAction:** URL that returns the [TwiML][twiml] for the call
 * **notify:** Array of numbers to call and notify (currently only supports exactly 1 number)
 
+> **Note:** _The script intentionally kills itself_ if it has to notify you. Twilio costs cash-money, so we don't want to go wasting that, do we?! Also, not getting called every minute while you're trying to fix your app is probably going to make it easier to fix. Just manually restart the monitoring job once you've fixed your app.
+
 Once that's all good to go, start it up:
 
     $ node main.js
