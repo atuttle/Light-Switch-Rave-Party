@@ -1,0 +1,16 @@
+{
+  "name": "LightSwitchRaveParty",
+  "version": "0.0.0",
+  "description": "Custom API monitoring with twilio call alerts",
+  "main": "main.js",
+  "dependencies": {
+    "twilio": "~1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Adam Tuttle (adam@fusiongrokker.com)",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+	"gettable": "http://google.com"
+	,"getFrequency": 120
+	,"getTimeout": 5
+	,"notifyAction": "http://twimlets.com/message?Message%5B0%5D=Google%20is%20down"
+	,"notify": [
+		"+1 (555) 867-5309"
+	]
+}
