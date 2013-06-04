@@ -8,7 +8,7 @@ As described in my [blog post][bolg], I have my phone set to silence _everything
 
 For this reason, SMS alerts won't work for a situation in which I _really_ need to get out of bed and fix something. Enter **Light Switch Rave Party** ("LSRP"). It will check a URL via HTTP GET, and if the timeout is exceeded, or if a non-200-range response status is returned (400, 500, etc) then it calls you using Twilio to alert you to the problem.
 
-You'll create an auth.json file (copy auth-example.json and modify it), with your Twilio credentials and the phone number you want to use as the caller.
+You'll **create an auth.json file** (copy auth-example.json and modify it), with your Twilio credentials and the phone number you want to use as the caller.
 
 Then update config.json:
 
