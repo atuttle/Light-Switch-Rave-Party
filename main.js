@@ -13,7 +13,7 @@ function notify(callback){
 	twilio.makeCall(
 		{
 			to: config.notify[0]
-			,from: config.caller
+			,from: auth.caller
 			,url: config.notifyAction
 		}
 		,function(err, responseData){
