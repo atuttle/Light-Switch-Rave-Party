@@ -32,5 +32,5 @@ You can run this in the background, but currently it logs messages to stdout, so
 
 Pull requests welcome. **MIT Licensed.**
 
-[bolg]: http://fusiongrokker.com
+[bolg]: http://fusiongrokker.com/post/app-down-notify-yourself-via-phone-call
 [twiml]: https://www.twilio.com/labs/twimlets/message
